@@ -8,6 +8,7 @@ function Car(make, model, year, color){
   this.previousOwners = [];
   this.currentOwner = 'Manufacturer';
   this.passengers = [];
+  
 
 
  
@@ -30,5 +31,15 @@ this.state = 'on';
 Car.prototype.off = function(off){
 this.state = 'off';
 };
+
+Car.prototype.pickUp = function(passengers){
+if (this.state === 'on') {
+  this.passengers = ['john']
+
+}
+};
+
+
+
 
 module.exports=Car;
