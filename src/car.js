@@ -1,8 +1,9 @@
-function Car(make, model, year, color){
+function Car(make, model, year, color, state){
   this.make = make;
   this.model = make;
   this.year = year;
-  this.colour;
+  this.color = color
+  this.state = state
 }
 
 
