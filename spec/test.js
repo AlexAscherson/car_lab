@@ -8,7 +8,7 @@ describe('Car', function(){
 
   beforeEach(function(){
     // create a new myCar object each time
-    myCar = new Car("Dodge","Charger", 2015, "Red", "off",[],"Manufacturer","","Charlie");
+    myCar = new Car("Dodge","Charger", 2015, "Red");
   });
 
   describe('#year', function(){
@@ -61,7 +61,7 @@ describe('Car', function(){
   });
 
   describe('#start', function(){
-    xit('should update the state to on', function(){
+    it('should update the state to on', function(){
       myCar.start();
       expect(myCar.state).to.equal("on");
     });
