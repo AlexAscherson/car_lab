@@ -1,4 +1,4 @@
-function Car(make, model, year, color, state){
+function Car(make, model, year, color){
   this.make = make;
   this.model = model;
   this.year = year;
@@ -8,6 +8,7 @@ function Car(make, model, year, color, state){
   this.previousOwners = [];
   this.currentOwner = 'Manufacturer';
   this.passengers = [];
+
 
  
 }
@@ -26,5 +27,8 @@ Car.prototype.start = function(start){
 this.state = 'on';
 };
 
+Car.prototype.off = function(off){
+this.state = 'off';
+};
 
 module.exports=Car;
